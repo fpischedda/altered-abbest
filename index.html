@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <script src="js/jaws.js"></script>
+	<script src="coffeescript/player.js"></script>
+	<script src="coffeescript/tilemap.js"></script>
+	<script src="coffeescript/game.js"></script>
+
+    <title>Altered Abbeast - Power by Jaws</title>
+  </head>
+<body>
+  <div id="info">
+	Written by Alessandro and Francesco Pischedda
+  </div>
+
+  <script>
+	jaws.onload = function() {
+		 jaws.unpack();
+		 jaws.assets.add(["sprites/hero.png","block.png", 
+			"bg/parallax_1.png", "bg/parallax_2.png", 
+			"bg/parallax_3.png", "bg/parallax_4.png"]);
+
+   		jaws.start(Game);
+	}
+  </script>
+</body>
+</html>
+
